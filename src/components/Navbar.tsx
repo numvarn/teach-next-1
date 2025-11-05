@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from 'next/link'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Navbar() {
   return (
@@ -9,7 +9,9 @@ export default function Navbar() {
       <div className="container-fluid">
         {/* Logo on the left */}
         <Link className="navbar-brand" href="/">
-          <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#0066cc' }}>
+          <span
+            style={{ fontSize: '24px', fontWeight: 'bold', color: '#0066cc' }}
+          >
             LOGO
           </span>
         </Link>
@@ -45,9 +47,14 @@ export default function Navbar() {
                 ติดต่อเรา
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/question">
+                คำถาม
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-  );
+  )
 }
